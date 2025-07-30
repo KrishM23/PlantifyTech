@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - AI Forest Guardians</title>
+    <link rel="stylesheet" href="aboutme.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="AI Forest Guardians Logo">
+        </div>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="aboutme.html">About Us</a>
+            <a href="projects.html">AI Model</a>
+            <a href="photo_gallery.html">Photos</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </header>
+    <main class="about-container">
+        <h1 id="about-header"> About Us</h1>
+        <section class="about-section">
+            
+            <div class="about-card">
+                <div class="about-image">
+                    <img src="your_photo.png" alt="Your Name">
+                </div>
+                <div class="about-content">
+                    <h1>The Developer</h1>
+                    <p>Krish is a passionate tennis player, chess player, and environmental activist. He loves to code in his free-time, programming android apps and HTML websites.</p>
+                    <p>Currently, Krish is a rising senior in high school. </p>
+                    <div class="social-media">
+                        <a href="#"><img src="twitter_icon.png" alt="Twitter"></a>
+                        <a href="#"><img src="facebook_icon.png" alt="Facebook"></a>
+                        <a href="https://www.instagram.com/krish_matai/"><img src="instagram_icon.png" alt="Instagram"></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Volunteer 1 -->
+            <div class="about-card">
+                <div class="about-image">
+                    <img src="Screenshot 2024-08-06 at 1.57.28 PM.png" alt="Volunteer 1">
+                </div>
+                <div class="about-content">
+                    <h1>Staff & Volunteer</h1>
+                    <ul>
+                        <li>Vice President of camping club</li>
+                        <li>Animal enthusiast</li>
+                        <li>Sci-fi and academic nerd</li>
+                    </ul>                
+                    <p>Leon is a passionate volunteer in the field of environmental sciences and he plans to plant trees across various cities in Taiwan like Taipei.</p>
+                    <div class="social-media">
+                        <a href="#"><img src="twitter_icon.png" alt="Twitter"></a>
+                        <a href="#"><img src="facebook_icon.png" alt="Facebook"></a>
+                        <a href="#"><img src="instagram_icon.png" alt="Instagram"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Volunteer 2 -->
+        <!-- Uncomment to add more volunteers
+        <section class="about-section">
+            <div class="about-card">
+                <div class="about-image">
+                    <img src="volunteer2_photo.png" alt="Volunteer 2">
+                </div>
+                <div class="about-content">
+                    <h1>Volunteer 2</h1>
+                    <p>Volunteer 2 is a community organizer who has brought together hundreds of people to participate in mass planting events. Their organizational skills and passion for the environment make them a key part of our team.</p>
+                    <p>Volunteer 2 also conducts educational workshops to raise awareness about the importance of trees and how to care for them.</p>
+                    <div class="social-media">
+                        <a href="#"><img src="twitter_icon.png" alt="Twitter"></a>
+                        <a href="#"><img src="facebook_icon.png" alt="Facebook"></a>
+                        <a href="#"><img src="instagram_icon.png" alt="Instagram"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <div class="about-card">
+                <div class="about-image">
+                    <img src="volunteer3_photo.png" alt="Volunteer 3">
+                </div>
+                <div class="about-content">
+                    <h1>Volunteer 3</h1>
+                    <p>Volunteer 3 is an environmental scientist who conducts research on the impact of our planting projects. They provide valuable insights that help us make data-driven decisions to maximize our positive impact on the planet.</p>
+                    <p>With a deep understanding of ecology, Volunteer 3 ensures that our projects are sustainable and beneficial to the local ecosystems.</p>
+                    <div class="social-media">
+                        <a href="#"><img src="twitter_icon.png" alt="Twitter"></a>
+                        <a href="#"><img src="facebook_icon.png" alt="Facebook"></a>
+                        <a href="#"><img src="instagram_icon.png" alt="Instagram"></a>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        
+        <!-- Tree Planting Section -->
+        <section class="tree-planting-section">
+            <h2 id="tree-header">Tree Planting</h2>
+            <div id="map"></div>
+        </section>
+
+        <section class="planting-cities-container">
+            <h1 id="header-cities">Planting Cities</h1>
+            <p>Global cities we plan to plant trees across.</p>
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slider-item">
+                        <h2>Taipei, Taiwan</h2>
+                        <img src="taipei.jpg" alt="Taipei">
+                    </div>
+                    <div class="slider-item">
+                        <h2>Kaohsiung, Taiwan</h2>
+                        <img src="kaohsiung.jpg" alt="Kaohsiung">
+                    </div>
+                    <div class="slider-item">
+                        <h2>Los Angeles, California</h2>
+                        <img src="los_angeles.jpg" alt="Los Angeles">
+                    </div>
+                    <div class="slider-item">
+                        <h2>San Francisco, California</h2>
+                        <img src="san_francisco.jpg" alt="San Francisco">
+                    </div>
+                </div>
+            </div>
+            <div class="slider-navigation">
+                <button class="prev" onclick="prevSlide()">&#10094;</button>
+                <button class="next" onclick="nextSlide()">&#10095;</button>
+            </div>
+        </section>
+    </main>
+    <script src="animations.js"></script>
+    <script src="aboutme.js"></script>
+</body>
+</html>

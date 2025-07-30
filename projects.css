@@ -1,0 +1,211 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the items vertically */
+    padding: 25px 50px;
+    background: linear-gradient(90deg, rgba(34,139,34,1) 0%, rgba(34,139,34,0.8) 100%);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.navbar .logo {
+    position: absolute;
+    left: 20px;
+    animation: fadeInLeft 1s ease-in-out;
+}
+
+.navbar .menu {
+    display: flex;
+    gap: 30px;
+}
+
+.navbar .menu a {
+    margin: 0 25px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1rem;
+    position: relative;
+    transition: color 0.3s;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.navbar .menu a:hover {
+    color: #ffeb3b;
+}
+
+.navbar .menu a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: #ffeb3b;
+    transition: width 0.3s, left 0.3s;
+}
+
+.navbar .menu a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/* Optional: Increase the logo size for better visibility */
+.navbar .logo img {
+    height: 60px; /* Adjust as needed */
+}
+
+/* Projects Container Styles */
+.projects-container {
+    padding: 60px 30px;
+    max-width: 1000px;
+    margin: 50px auto;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.projects-container h1 {
+    font-size: 3rem;
+    color: #228B22;
+    margin-bottom: 40px;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+#camera-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+#camera {
+    width: 100%;
+    max-width: 600px;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: border 0.3s;
+}
+
+#camera:hover {
+    border: 2px solid #228B22;
+}
+
+#capture-btn {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+#capture-btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+#photo-canvas {
+    display: none;
+}
+
+
+#result {
+    margin-top: 30px;
+    font-size: 1.5rem;
+    color: #333;
+    animation: fadeInUp 2.5s ease-in-out;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+#result strong {
+    font-weight: bold;
+    color: #228B22;
+    font-size: 1.6rem;
+}
+
+#result .metric {
+    margin-top: 10px;
+    padding: 10px;
+    background: #e0f7fa;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    color: #00796b;
+    display: flex;
+    justify-content: space-between;
+}
+
+#result .metric span {
+    font-weight: bold;
+}
+/* Add to your existing CSS file */
+
+/* Comparison Text Styles */
+.comparison-text {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Chart Container */
+.chart-container {
+    margin-top: 30px;
+}
+
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

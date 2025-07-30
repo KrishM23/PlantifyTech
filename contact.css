@@ -1,0 +1,198 @@
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+/* Center the navbar */
+.navbar {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the items vertically */
+    padding: 25px 50px;
+    background: linear-gradient(90deg, rgba(34,139,34,1) 0%, rgba(34,139,34,0.8) 100%);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Adjust the logo and menu alignment */
+.navbar .logo {
+    position: absolute;
+    left: 20px;
+    animation: fadeInLeft 1s ease-in-out;
+}
+
+.navbar .menu {
+    display: flex;
+    gap: 30px;
+}
+
+.navbar .menu a {
+    margin: 0 25px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1rem;
+    position: relative;
+    transition: color 0.3s;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.navbar .menu a:hover {
+    color: #ffeb3b;
+}
+
+.navbar .menu a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: #ffeb3b;
+    transition: width 0.3s, left 0.3s;
+}
+
+.navbar .menu a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.navbar .hire-me {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.3s;
+    animation: fadeInRight 1s ease-in-out;
+}
+
+.navbar .hire-me:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/* Optional: Increase the logo size for better visibility */
+.navbar .logo img {
+    height: 60px; /* Adjust as needed */
+}
+
+/* Contact Container */
+.contact-container {
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.contact-container h1 {
+    font-size: 3rem;
+    color: #228B22;
+    margin-bottom: 40px;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #228B22;
+}
+
+.submit-btn {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+.submit-btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

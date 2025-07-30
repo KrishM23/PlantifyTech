@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Forest Guardians - Projects</title>
+    <link rel="stylesheet" href="projects.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Include Chart.js library -->
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="AI Forest Guardians Logo">
+        </div>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="aboutme.html">About Us</a>
+            <a href="projects.html">AI Model</a>
+            <a href="photo_gallery.html">Photos</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </header>
+    <main class="projects-container">
+        <h1>Assess Habitat for Degradation</h1>
+        <div id="camera-container">
+            <video id="camera" autoplay></video>
+            <button id="capture-btn">Capture Photo</button>
+            <canvas id="photo-canvas" style="display:none;"></canvas>
+        </div>
+        <div id="result"></div>
+        <div class="chart-container">
+            <canvas id="resultsChart"></canvas> <!-- Canvas element for Chart.js -->
+        </div>
+        <div id="comparison-text" class="comparison-text">
+            COMPARED TO OPTIMAL ENVIRONMENT
+        </div>
+        <div class="chart-container">
+            <canvas id="comparisonChart"></canvas> <!-- Canvas element for comparison Chart.js -->
+        </div>
+    </main>
+    <script src="projects.js"></script>
+</body>
+</html>

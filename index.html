@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Forest Guardians</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="footer.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+</head>
+<body>
+    <header class="hero-section">
+        <nav class="navbar">
+            <div class="logo">
+              <img src="logo.png" alt="AI Forest Guardians Logo">
+            </div>
+            <div class="menu">
+              <div class="dropdown">
+                <a href="#about" class="dropbtn">Home</a>
+                <div class="dropdown-content">
+                  <a href="#our-mission">Our Mission</a>
+                  <a href="#live-updates">Live Updates</a>
+                  <a href="#how-to-help">How to Help</a>
+                </div>
+              </div>
+              <a href="aboutme.html">About Us</a>
+              <a href="projects.html">AI Model</a>
+              <a href="photo_gallery.html">Photos</a>
+              <a href="contact.html">Contact</a>
+            </div>
+            <a href="contact.html" class="hire-me">Contact</a>
+        </nav>
+          
+        <div class="hero-content">
+            <div class="title-box">
+                <h1 class="hero-title">AI Forest Guardians</h1>
+                <p class="hero-subtitle">Planting Trees Across the Globe with AI</p>
+            </div>
+        </div>
+        <div class="soil">
+            <img src="soil.png" alt="Soil">
+        </div>
+        <div class="tree-animation-container">
+            <div class="tree" id="tree1"></div>
+            <div class="tree" id="tree2"></div>
+            <div class="tree" id="tree3"></div>
+            <div class="tree" id="tree4"></div>
+            <div class="tree" id="tree5"></div>
+            <!-- Add more trees as needed -->
+        </div>
+        <div class="scroll-indicator">Scroll</div>
+    </header>
+    <script src="script.js"></script>
+    <script src="footer.js"></script>
+    <script src="numbers.js"></script>
+    <script src="button.js"></script>
+
+    <section class="second-segment scroll-animation" id="our-mission">
+        <h2>Our Mission</h2>
+        <p>At AI Forest Guardians, our mission is to leverage the power of artificial intelligence to restore and conserve forests around the world. By planting trees and using advanced technology, we aim to combat climate change and preserve biodiversity for future generations.</p>
+        <div class="cards-container">
+            <div class="card scroll-animation">
+                <!-- <img src="project1.jpg" alt="Project 1"> -->
+                <h3>Tree Planting Initiatives</h3>
+                <p>We organize large-scale tree planting events to restore degraded lands and create sustainable environments.</p>
+                <a href="https://thelightinitiative.com">Learn More</a>
+            </div>
+            <div class="card scroll-animation">
+                <!-- <img src="project2.jpg" alt="Project 2"> -->
+                <h3>AI Monitoring</h3>
+                <p>Our AI technology can effectively assess a habitat for degradation, and recommend whether it is beneficial to plant a tree there.</p>
+                <a href="projects.html">Learn More</a>
+            </div>
+            <div class="card scroll-animation">
+                <!-- <img src="project3.jpg" alt="Project 3"> -->
+                <h3>Community Engagement</h3>
+                <p>We work with local communities to promote environmental awareness and sustainable practices.</p>
+                <a href="https://thelightinitiative.com">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="third-segment" id="live-updates">
+        <h2>Live Updates of Tree Count</h2>
+        <p>Stay updated with the latest tree planting counts across the globe, including Taiwan, the U.S., and the UK.</p>
+        <div class="chart-container">
+            <canvas id="treeCountChart"></canvas>
+        </div>
+    </section>
+
+   <!-- Existing Content -->
+
+    <!-- Existing Content -->
+
+    <section class="how-you-can-help" id="how-to-help">
+        <h2>How You Can Help</h2>
+        <p>There are many ways you can get involved with AI Forest Guardians. Join us in making a difference and contributing to a greener planet.</p>
+        <div class="help-container">
+            <div class="help-item">
+                <img src="volunteeri.jpg" alt="Volunteer">
+                <div class="help-info">
+                    <h3>Volunteer</h3>
+                    <p>Join our team of dedicated volunteers and help us plant trees and restore forests around the world.</p>
+                    <a href="https://thelightinitiative.com/volunteer">Learn More</a>
+                </div>
+            </div>
+            <div class="help-item">
+                <img src="donate.jpg" alt="Donate">
+                <div class="help-info">
+                    <h3>Donate</h3>
+                    <p>Your donations help us to fund tree planting projects and ensure their sustainability.</p>
+                    <a href="https://thelightinitiative.com/page-ffDAUGop4">Learn More</a>
+                </div>
+            </div>
+            <div class="help-item">
+                <img src="spread_awareness.jpg" alt="Spread Awareness">
+                <div class="help-info">
+                    <h3>Spread Awareness</h3>
+                    <p>Help us spread the word about our mission and the importance of reforestation.</p>
+                    <a href="https://thelightinitiative.com/page-ffDAUGop4">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="impact-section">
+        <h2>Our Impact</h2>
+        <div class="impact-container">
+            <div class="impact-item">
+                <span class="number" data-target="7">0</span>
+                <p>Continents Reached</p>
+            </div>
+            <div class="impact-item">
+                <span class="number" data-target="195">0</span>
+                <p>Countries Reached</p>
+            </div>
+            <div class="impact-item">
+                <span class="number" data-target="206">0</span>
+                <p>States Reached</p>
+            </div>
+        </div>
+    </section>
+
+    
+    
+    
+
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Help</h3>
+                <ul>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="projects.html">AI Model</a></li>
+                    <li><a href="photo_gallery.html">Photos</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>About Us</h3>
+                <ul>
+                    <li><a href="aboutme.html">Our Story</a></li>
+                    <li><a href="https://thelightinitiative.com">Our Global Mission</a></li>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Learn More</h3>
+                <ul>
+                    <li><a href="https://www.treesaregood.org/treeowner/plantingatree">How to plant a tree</a></li>
+                    <li><a href="https://education.nationalgeographic.org/resource/deforestation/#:~:text=Deforestation%20is%20the%20purposeful%20clearing,altered%20landscapes%20around%20the%20world.">What is deforestation?</a></li>
+                    <li><a href="https://www.un.org/en/climatechange/what-is-climate-change">What is climate change?</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <ul class="social-media">
+                    <li><a href="#"><img src="twitter_icon.png" alt="Twitter"></a></li>
+                    <li><a href="#"><img src="facebook_icon.png" alt="Facebook"></a></li>
+                    <li><a href="https://www.instagram.com/thelightinitiative1/"><img src="instagram_icon.png" alt="Instagram"></a></li>
+                </ul>
+            </div>
+        </div>
+        <button id="back-to-top" title="Go to top">&#x25B2;</button>
+        <button onclick="window.location.href='contact.html';" class="navigate-button">Contact Us</button>
+
+    </footer>
+
+    <!-- Contact Popup -->
+    <div id="contact-popup" class="contact-popup">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    
+    
+    <!-- Add this at the end of your <body> tag -->
+    <!-- Back to Top Button -->
+    
+
+
+    
+    
+</body>
+</html>
